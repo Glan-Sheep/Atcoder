@@ -27,10 +27,6 @@ using vvl = vector<vl>;
 using vvll = vector<vll>;
 using vs = vector<string>;
 using vpii = vector<pii>;
-// unordered set
-using usi = unordered_set<int>;
-using usll = unordered_set<ll>;
-using uss = unordered_set<string>;
 
 /* define short */
 #define pb push_back
