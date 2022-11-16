@@ -33,7 +33,8 @@
     "string_view": "cpp",
     "ranges": "cpp",
     "span": "cpp",
-    "stacktrace": "cpp"
+    "stacktrace": "cpp",
+    "__hash_table": "cpp"
   },
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 2, TabWidth: 2, BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: true, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -2 }"
 }
