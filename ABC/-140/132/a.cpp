@@ -77,8 +77,12 @@ template <typename T> inline bool chmax(T& a, const T& b) {bool compare = a < b;
 // clang-format on
 
 int main() {
-  int x, a;
-  cin >> x >> a;
-  if (x < a) cout << 0 << endl;
-  else cout << 10 << endl;
+  vector<char> s(4);
+  rep(i,4) cin >> s[i];
+  sort(s.begin(),s.end());
+  if (s[0] == s[1] && s[2] == s[3] && s[1] != s[2]) {
+    cout << "Yes" << endl;
+  }else {
+    cout << "No" << endl;
+  }
 }
