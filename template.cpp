@@ -30,6 +30,10 @@ using vpii = vector<pii>;
 #define repd(i,n) for(ll i=n-1;i>=0;i--)
 #define rrepd(i,n) for(ll i=n;i>=1;i--)
 
+//定数
+#define inf 2147483647;
+#define INF 9223372036854775807;
+
 /* func */
 inline int in_int() {int x; cin >> x; return x;}
 inline ll in_ll() {ll x; cin >> x; return x;}
