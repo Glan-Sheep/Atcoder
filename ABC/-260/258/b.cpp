@@ -1,26 +1,63 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-#define rep(i,a,b) for(int i=a;i<b;i++)
-#define rrep(i,a,b) for(int i=a;i>=b;i--)
-#define fore(i,a) for(auto &i:a)
-#define all(x) (x).begin(),(x).end()
 
-/*---------------------------------------------------------------------------------------------------
-　　　　　　　　　　　 ∧＿∧
-　　　　　 ∧＿∧ 　（´<_｀ ）　 Welcome to My Coding Space!
-　　　　 （ ´_ゝ`）　/　 ⌒i
-　　　　／　　　＼　 　  |　|
-　　　 /　　 /￣￣￣￣/　　|
-　 ＿_(__ﾆつ/　    ＿/ .| .|＿＿＿＿
-　 　　　＼/＿＿＿＿/　（u　⊃
----------------------------------------------------------------------------------------------------*/
+/* alias */
+// type
+using ull = unsigned long long;
+using ll = long long;
+using ld = long double;
+// pair
+using pii = pair<int, int>;
+// vector
+using vi = vector<int>;
+using vl = vector<long>;
+using vll = vector<ll>;
+using vvi = vector<vi>;
+using vvl = vector<vl>;
+using vvll = vector<vll>;
+using vs = vector<string>;
+using vpii = vector<pii>;
+
+/* define short */
+#define mp make_pair
+#define all(obj) (obj).begin(), (obj).end()
+#define YesNo(bool) if(bool){cout<<"Yes"<<endl;}else{cout<<"No"<<endl;}
+
+/* REP macro */
+#define reps(i, a, n) for (ll i = (a); i < (ll)(n); ++i)
+#define rep(i, n) reps(i, 0, n)
+#define rrep(i, n) reps(i, 1, n + 1)
+#define repd(i,n) for(ll i=n-1;i>=0;i--)
+#define rrepd(i,n) for(ll i=n;i>=1;i--)
+
+//定数
+#define inf 2147483647;
+#define INF 9223372036854775807;
+
+/* func */
+inline int in_int() {int x; cin >> x; return x;}
+inline ll in_ll() {ll x; cin >> x; return x;}
+inline double in_double() {{double x; cin >> x; return x;}}
+inline string in_str() {string x; cin >> x; return x;}
+inline int ctoi(char c) {return c - '0';}
+
 int main() {
   int n;
   cin >> n;
-  vector<vector<int> > a(n, vector<int>(n));
-  for(int i=0;i<n;i++) {
-    for(int j=0;j<n;j++) {
-      cin >> a[i][j];
+  vl a(n);
+  rep(i,n) cin >> a[i];
+  int ans = 0;
+  rep(i,n) {
+    rep(j,n) {
+      rep(k,8) {
+        int count = 0;
+        switch (k) {
+          case 0:
+          rep(l,n) {
+            count += a[i][j];
+          }
+        }
+      }
     }
   }
 }
