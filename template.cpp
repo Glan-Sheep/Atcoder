@@ -40,6 +40,8 @@ inline ll in_ll() {ll x; cin >> x; return x;}
 inline double in_double() {{double x; cin >> x; return x;}}
 inline string in_str() {string x; cin >> x; return x;}
 inline int ctoi(char c) {return c - '0';}
+template<class T>bool chmax(T& a, const T& b) { if (a < b) { a = b; return 1; } return 0; }
+template<class T>bool chmin(T& a, const T& b) { if (b < a) { a = b; return 1; } return 0; }
 
 int main() {
 }
