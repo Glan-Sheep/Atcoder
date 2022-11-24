@@ -44,7 +44,9 @@ inline int ctoi(char c) {return c - '0';}
 int main() {
   int x, y, n;
   cin >> x >> y >> n;
-  int k = n / 3;
-  int l = n % 3;
-  cout << k*y + l*x << endl;
+  if (x * 3 > y) {
+    cout << (n/3) * y + (n%3) * x << endl;
+  }else{
+    cout << x * n << endl;
+  }
 }
