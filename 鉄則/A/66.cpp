@@ -44,15 +44,10 @@ template<class T>bool chmax(T& a, const T& b) { if (a < b) { a = b; return 1; } 
 template<class T>bool chmin(T& a, const T& b) { if (b < a) { a = b; return 1; } return 0; }
 
 int main() {
-  int k, n;
-  cin >> k >> n;
-  vi a(n);
-  rep(i,n) cin >> a[i];
-  int ans = a[n-1] - a[0];
-  reps(i,1,n) {
-    int i_to_start = k - a[i];
-    int start_to_i1 = a[i-1];
-    chmin(ans, i_to_start+start_to_i1);
+  int n, q;
+  cin >> n >> q;
+  rep(i,q) {
+    int type, u, v;
+    cin >> type >> u >> v;
   }
-  cout << ans << endl;
 }
